@@ -1,0 +1,31 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+issueTrackerURL = "https://github.com/kyber-6/tsbc-mod/issues"
+license = "MIT"
+
+[[mods]]
+modId = "tsbc"
+version = "${version}"
+displayName = "That Should Be Craftable"
+authors = "kyber-6, Pixel Dream Studios"
+description = '''
+Adds recipes for miscellaneous items that should be craftable
+'''
+logoFile = "icon.png"
+
+[[dependencies.tsbc]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tsbc]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[mixins]]
+config = "tsbc.mixins.json"

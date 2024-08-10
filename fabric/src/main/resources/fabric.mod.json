@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "tsbc",
+  "version": "${version}",
+  "name": "That Should Be Craftable",
+  "description": "Adds recipes for miscellaneous items that should be craftable",
+  "authors": [
+    "kyber-6",
+    "Pixel Dream Studios"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/project/tsbc",
+    "sources": "https://github.com/kyber-6/tsbc-mod",
+    "issues": "https://github.com/kyber-6/tsbc-mod/issues"
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.pixeldreamstudios.tsbc.fabric.TSBCFabric"
+    ]
+  },
+  "mixins": [
+    "tsbc.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
